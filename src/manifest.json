@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Expand Button for Logentries and Semaphore",
+  "description": "Link to expand all results after a searching",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [{
+    "js": ["jquery-1.11.1.min.js", "background.js"],
+    "matches": [ "https://semaphoreci.com/*", "https://logentries.com/*" ],
+    "run_at": "document_end"
+  }],
+
+  "browser_action": {
+    "default_icon": "icons8-plus-64.png",
+    "default_title": "Link to expand all results after a searching"
+  }
+}
