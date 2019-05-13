@@ -8,7 +8,7 @@ $( document ).ready(function() {
   }
 
   // Semaphore
-  $("div#build-state-app").after("<a href='javascript:void(0);' class='semaphore-chrome-ext' style='font-size: 15px; white-space: nowrap;'>Expand All Failures</a>");
+  $("div#wait-info").before("<a href='javascript:void(0);' class='semaphore-chrome-ext' style='font-size: 15px; white-space: nowrap; float: right;'>Expand All Failures</a>");
   $(".semaphore-chrome-ext").on("click", semaphore_expand_failures);
 
   function semaphore_expand_failures(){
