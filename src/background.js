@@ -15,4 +15,11 @@ $( document ).ready(function() {
     $(".c-filter-projects_icon_failed").click();
     $(".c-results_list_command").click()
   }
+
+  // Github
+  $("div.pr-review-tools").after("<div class='float-right pr-review-tools'><button class='github-chrome-ext-load-all' style='font-size: 15px; white-space: nowrap;'>Expand All Changes</button></div>");
+
+  $( ".github-chrome-ext-load-all" ).bind( "click", function() {
+    $(".load-diff-button").click();
+  });
 });
