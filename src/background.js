@@ -22,4 +22,21 @@ $( document ).ready(function() {
   $( ".github-chrome-ext-load-all" ).bind( "click", function() {
     $(".load-diff-button").click();
   });
+
+  // GitHub add branch to Semaphore
+  $(".tabnav-tabs").first().append(
+    '<a title="Add this branch to Semaphore"' +
+        'href="https://semaphoreci.com/thundertix_by_tds/thundertix/branches/new?branch%5Bname%5D=' + $("code.text-gray-dark").text() + '" ' +
+        'class="tabnav-tab js-pjax-history-navigate warning" ' +
+        'target="_blank">' +
+      'Add to Semaphore' +
+    '</a>'
+    );
+
+  var currentUrl = document.URL;
+  var linkUrl = currentUrl.replace("https://semaphoreci.com/thundertix_by_tds/thundertix/branches/new?", "/thundertix_by_tds/thundertix/branches?");
+  if(linkUrl.includes("/thundertix_by_tds/thundertix/branches?branch%5Bname%5D=")){
+    $('a[href="' + linkUrl + '"]').closest("li").css("backgroundColor", "yellow");
+    $('a[href="' + linkUrl + '"]').click();
+  }
 });

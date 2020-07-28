@@ -11,7 +11,7 @@
 
   "content_scripts": [{
     "js": ["jquery-1.11.1.min.js", "background.js"],
-    "matches": [ "https://semaphoreci.com/*", "https://logentries.com/*" ],
+    "matches": [ "https://semaphoreci.com/*", "https://logentries.com/*", "https://github.com/*" ],
     "run_at": "document_end"
   }],
 
