@@ -10,6 +10,10 @@
   ],
 
   "content_scripts": [{
+    "css": ["negate_colors.css"],
+    "matches": [ "https://semaphoreci.com/*", "https://logentries.com/*", "https://github.com/*", "https://*.thundertix.com/*", "https://*.thunderstage.com/*" ],
+    "run_at": "document_idle"
+  }, {
     "js": ["jquery-1.11.1.min.js", "background.js"],
     "matches": [ "https://semaphoreci.com/*", "https://logentries.com/*", "https://github.com/*" ],
     "run_at": "document_end"
