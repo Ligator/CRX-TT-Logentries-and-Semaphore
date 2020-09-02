@@ -2,3 +2,15 @@ body {
   filter: invert(87%);
   background-color: black !important;
 }
+
+span.IssueLabel {
+  filter: invert(0%);
+}
+
+span.State {
+  filter: invert(0%);
+}
+
+img {
+  filter: invert(0%);
+}

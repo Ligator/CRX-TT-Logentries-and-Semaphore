@@ -4,9 +4,11 @@
   "name": "Expand Button for Logentries and Semaphore",
   "description": "Link to expand all results after a searching",
   "version": "1.0",
+  "options_page": "options.html",
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
 
   "content_scripts": [{
