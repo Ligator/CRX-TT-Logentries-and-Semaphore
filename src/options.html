@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dark Mode for Sites</title></head>
+<style type="text/css">
+  body {
+    filter: invert(87%);
+    background-color: black !important;
+  }
+</style>
+<body>
+
+<div>
+  <p>
+    Select the sites that will work on Dark Mode:
+  </p>
+</div>
+<ul>
+  <li>
+    <label>
+      <input type="checkbox" id="dark_github">
+      GitHub.
+    </label>
+  </li>
+
+  <li>
+    <label>
+      <input type="checkbox" id="dark_semaphore">
+      Semaphore.
+    </label>
+  </li>
+
+  <li>
+    <label>
+      <input type="checkbox" id="dark_logentries">
+      Logentries.
+    </label>
+  </li>
+
+  <li>
+    <label>
+      <input type="checkbox" id="dark_thundertix">
+      ThunderTix.
+    </label>
+  </li>
+
+  <li>
+    <label>
+      <input type="checkbox" id="dark_thunderstage">
+      ThunderStage.
+    </label>
+  </li>
+
+  <li>
+    <label>
+      <input type="checkbox" id="dark_localthundertix">
+      Local ThunderTix (admin.lvh.me:3000).
+    </label>
+  </li>
+</ul>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>
